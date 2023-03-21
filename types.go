@@ -8,28 +8,28 @@ import (
 type XsdType string
 
 var (
-	XsdString   = XsdType("xsd:string")
-	XsdBoolean  = XsdType("xsd:boolean")
-	XsdDateTime = XsdType("xsd:dateTime")
+	XsdString   = XsdType("xs:string")
+	XsdBoolean  = XsdType("xs:boolean")
+	XsdDateTime = XsdType("xs:dateTime")
 
 	// 64-bit floating point numbers
-	XsdDouble = XsdType("xsd:double")
+	XsdDouble = XsdType("xs:double")
 	// 32-bit floating point numbers
-	XsdFloat = XsdType("xsd:float")
+	XsdFloat = XsdType("xs:float")
 
 	// signed 32 or 64 bit
-	XsdInteger = XsdType("xsd:integer")
+	XsdInteger = XsdType("xs:integer")
 	// signed (8 bit)
-	XsdByte = XsdType("xsd:byte")
+	XsdByte = XsdType("xs:integer")
 	// signed (16 bit)
-	XsdShort = XsdType("xsd:short")
+	XsdShort = XsdType("xs:integer")
 
 	// unsigned 32 or 64 bit
-	XsdUinteger = XsdType("xsd:unsignedInt")
+	XsdUinteger = XsdType("xs:integer")
 	// unsigned 8 bit
-	XsdUnsignedByte = XsdType("xsd:unsignedByte")
+	XsdUnsignedByte = XsdType("xs:integer")
 	// unsigned 16 bit
-	XsdUnsignedShort = XsdType("xsd:unsignedShort")
+	XsdUnsignedShort = XsdType("xs:integer")
 )
 
 const XMLSchemaNamespace = "http://www.w3.org/2001/XMLSchema"
